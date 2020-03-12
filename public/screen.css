@@ -1,5 +1,6 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(207, 207, 207);
 }
 
 html {
@@ -9,4 +10,120 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(46, 46, 46);
+  justify-content: center;
+}
+
+header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  color: rgb(251, 69, 76);
+}
+
+article {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  height: 80vh;
+  width: 80vw;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-right: .5rem;
+}
+
+.NavList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.NavItems, a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(104, 103, 103);
+}
+
+nav li {
+  padding-top: .6rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+button {
+  align-self: center;
+  color: whitesmoke;
+  background-color: black;
+  border-color: black;
+  width: 20vw;
+  height: 9vw;
+  text-align: center;
+}
+
+.Footer {
+  font-size: 2.75rem;
+}
+
+.TNav {
+  visibility: hidden;
+}
+
+.Tul {
+  display: flex;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  .Mobile {
+    display: none;
+  }
+  .Tablet {
+    justify-content: space-between;
+  }
+  nav.TNav {
+    justify-content: space-between;
+    visibility: visible;
+    display: flex;
+  }
+  .TButton {
+    align-self: right;
+    color: whitesmoke;
+    background-color: black;
+    border-color: black;
+    width: 20vw;
+    height: 9vw;
+    text-align: center;
+    margin-top: .5rem;
+  }
+  ul.Tul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
