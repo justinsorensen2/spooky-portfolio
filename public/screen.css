@@ -1,6 +1,5 @@
 :root {
   font-family: 'Josefin Sans', sans-serif;
-  color: rgb(207, 207, 207);
 }
 
 html {
@@ -66,6 +65,10 @@ a {
   color: rgb(104, 103, 103);
 }
 
+.Mobile {
+  color: rgb(207, 207, 207);
+}
+
 nav li {
   padding-top: 0.6rem;
 }
@@ -91,45 +94,77 @@ button {
 
 .Footer {
   font-size: 2.75rem;
-}
-
-.TNav {
-  visibility: hidden;
+  color: rgb(207, 207, 207);
 }
 
 .Tul {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.TButton {
+  align-self: right;
+  color: whitesmoke;
+  background-color: black;
+  border-color: black;
+  width: 12vw;
+  height: 6vw;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-top: -1.5rem;
+}
+
+.Tablet {
+  display: none;
 }
 
 .Mission {
-  margin-top: -2rem;
+  color: rgb(207, 207, 207);
+}
+
+.TNavItem {
+  color: aqua;
+}
+h3 {
+  font-size: 0.15rem;
+}
+.Acula {
+  color: rgb(207, 207, 207);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Mobile {
     display: none;
   }
+
+  img {
+    height: 27vh;
+    width: 45vw;
+  }
+  .BodyList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .Tablet nav li a {
+    color: aqua;
+    font-size: 1rem;
+  }
+
+  .Mission {
+    margin-top: 2rem;
+  }
+
   .Tablet {
-    justify-content: space-between;
+    display: inherit;
   }
-  nav.TNav {
-    justify-content: space-between;
-    visibility: visible;
-    display: flex;
-  }
-  .TButton {
-    align-self: right;
-    color: whitesmoke;
-    background-color: black;
-    border-color: black;
-    width: 20vw;
-    height: 9vw;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
+
   ul.Tul {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
   }
 }
