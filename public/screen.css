@@ -67,6 +67,7 @@ a {
 
 .Mobile {
   color: rgb(207, 207, 207);
+  padding-left: 0.5rem;
 }
 
 nav li {
@@ -87,8 +88,8 @@ button {
   color: whitesmoke;
   background-color: black;
   border-color: black;
-  width: 20vw;
-  height: 9vw;
+  width: 7rem;
+  height: 3rem;
   text-align: center;
 }
 
@@ -108,8 +109,8 @@ button {
   color: whitesmoke;
   background-color: black;
   border-color: black;
-  width: 12vw;
-  height: 6vw;
+  width: 7rem;
+  height: 3rem;
   text-align: center;
   margin-right: 1.5rem;
   margin-top: -1.5rem;
@@ -132,14 +133,28 @@ h3 {
 .Acula {
   color: rgb(207, 207, 207);
 }
+.DNav {
+  visibility: hidden;
+}
+.NavList2 {
+  display: none;
+}
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
+  /* CSS for tablets */
+  .DNav {
+    visibility: hidden;
+  }
+  .NavList2 {
+    display: none;
+  }
+
   .Mobile {
     display: none;
   }
 
   img {
-    height: 27vh;
+    height: 29vh;
     width: 45vw;
   }
   .BodyList {
@@ -158,6 +173,7 @@ h3 {
 
   .Mission {
     margin-top: 2rem;
+    max-width: 39rem;
   }
 
   .Tablet {
@@ -166,5 +182,130 @@ h3 {
 
   ul.Tul {
     width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* CSS for desktop. */
+  .BodyItem {
+    visibility: hidden;
+  }
+
+  .BodyList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .Tablet nav li a {
+    color: aqua;
+    font-size: 1rem;
+  }
+
+  .Mission {
+    margin-top: 2rem;
+  }
+
+  ul.Tul {
+    width: 100%;
+    visibility: visible;
+  }
+  .MainNav {
+    display: none;
+  }
+
+  .DNav {
+    visibility: visible;
+  }
+
+  .NavList2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .NavItem2 {
+    padding-inline: 0.5rem;
+  }
+
+  .Image1 {
+    background-image: url('/images/image-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    width: 46vw;
+    align-content: center;
+    justify-content: center;
+  }
+  .Image2 {
+    background-image: url('/images/image-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    width: 46vw;
+    align-content: center;
+    justify-content: center;
+  }
+  .Image3 {
+    background-image: url('/images/image-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    width: 29vw;
+    align-content: center;
+    justify-content: center;
+  }
+  .Image4 {
+    background-image: url('/images/image-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    width: 29vw;
+    align-content: center;
+    justify-content: center;
+  }
+  .Image5 {
+    background-image: url('/images/image-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    width: 29vw;
+    align-content: center;
+    justify-content: center;
+  }
+  .Image6 {
+    background-image: url('/images/image-6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56vh;
+    width: 100vw;
+  }
+  .Image7 {
+    background-image: url('/images/image-7.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 45vw;
+  }
+  .Image8 {
+    background-image: url('/images/image-8.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 45vw;
+  }
+  ul.BodyList div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
